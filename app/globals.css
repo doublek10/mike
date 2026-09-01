@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { @apply scroll-smooth; }
+  body {
+    @apply bg-base-950 text-ink-100 font-sans antialiased;
+  }
+  ::selection { background: #E8A33D; color: #0B0F14; }
+}
+
+@layer utilities {
+  .panel {
+    @apply bg-base-900 border border-base-700 rounded-lg;
+  }
+  .eyebrow {
+    @apply text-[11px] tracking-[0.16em] uppercase text-ink-500 font-mono;
+  }
+}
